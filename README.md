@@ -25,7 +25,6 @@ GamerHub/
 - ✅ Implementação inicial e estável
 - ✅ Salva dados localmente (JsonSteam.json, JogosRecentes.json)
 - ✅ Ideal para análise offline dos dados
-- ✅ Base para desenvolvimento da V2
 
 ### [V2 - API REST](v2/)
 **API moderna com FastAPI para integração com front-end**
@@ -33,7 +32,6 @@ GamerHub/
 - ✅ Dados em tempo real (sem arquivos)
 - ✅ Documentação automática (Swagger)
 - ✅ CORS habilitado para front-end
-- ✅ Pronto para produção
 
 ## 🚀 Início Rápido
 
@@ -101,15 +99,3 @@ api_key=SUA_API_KEY_STEAM
 ```bash
 pytest -v
 ```
-
-## 📈 Evolução do Projeto
-
-Este projeto demonstra a **evolução natural de software**:
-
-1. **V1** - Prototipação e validação do conceito
-2. **V2** - Evolução para arquitetura moderna e escalável
-3. **Estrutura modular** - Preparada para futuras expansões
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
