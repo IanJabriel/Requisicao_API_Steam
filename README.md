@@ -1,4 +1,4 @@
-# 🌐 Consumo de APIs com Python
+# 🌐 Consumo de APIs da Steam com Python
 
 Repositório de estudos para praticar **requisições em APIs** usando **Python**.
 
