@@ -1,0 +1,1 @@
+# V1 - Versão Piloto do GamerHub Steam API

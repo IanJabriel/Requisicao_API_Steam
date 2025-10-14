@@ -1,0 +1,1 @@
+# V2 - API REST do GamerHub Steam API

@@ -81,10 +81,12 @@ def minutos_para_horas(minutos:int ) -> int:
     return math.ceil(minutos / 60)
 
 def main():
+    from dotenv import load_dotenv
+    load_dotenv()
     id_steam = os.getenv("id_steam")    
     key_steam = os.getenv("api_key")
 
-    print("EXECUTANDO AS APIS DA STEAM: ")
+    print("EXECUTANDO AS APIS DA STEAM: ")  
 
     steam = Steam(id_steam,key_steam)
     steam.jogos_steam("https://api.steampowered.com/IPlayerService/GetOwnedGames/v1/")

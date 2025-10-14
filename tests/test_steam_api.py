@@ -1,5 +1,5 @@
 import pytest
-import steam_api
+import v1.steam_api as steam_api
 import json
 
 def test_minutos_para_horas():
