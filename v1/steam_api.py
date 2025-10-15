@@ -34,7 +34,7 @@ class Steam():
                 for g in game_list_sorted
             ]
         
-            with open("JsonSteam.json", "w", encoding="utf-8") as arq:
+            with open(os.path.join(os.path.dirname(__file__), "JsonSteam.json"), "w", encoding="utf-8") as arq:
                 json.dump(games_filtred, arq, indent=4, ensure_ascii=False)
         else:
             print("Erro na requisição:", response.text)
@@ -70,7 +70,7 @@ class Steam():
                 for g in games_sorted
             ]
 
-            with open("JogosRecentes.json", "w", encoding="utf-8") as arq:
+            with open(os.path.join(os.path.dirname(__file__), "JogosRecentes.json"), "w", encoding="utf-8") as arq:
                 json.dump(recent_games_filtered, arq, indent=4, ensure_ascii=False)
 
         else:

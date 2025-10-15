@@ -36,23 +36,6 @@ def get_steam_credentials():
     
     return id_steam, key_steam
 
-@app.get("/")
-async def root():
-    """Endpoint raiz da API V2"""
-    return {
-        "message": "Steam Games API V2", 
-        "version": "2.0.0",
-        "description": "API REST moderna para integração com front-end",
-        "endpoints": {
-            "games": "/games/owned",
-            "recent": "/games/recent", 
-            "top": "/games/top/{limit}",
-            "search": "/games/search/{name}",
-            "stats": "/stats",
-            "docs": "/docs"
-        }
-    }
-
 @app.get("/games/owned")
 async def get_owned_games():
     try:
