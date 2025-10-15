@@ -11,7 +11,8 @@ class Steam():
         params = {
             "key": self.key_steam, 
             "steamid": self.id_steam, 
-            "include_appinfo": 1, 
+            "include_appinfo": 1,
+            "include_played_free_games": 1,
             "format": "json"
         }
 
@@ -47,7 +48,6 @@ class Steam():
             "key": self.key_steam,
             "steamid": self.id_steam,
             "format": "json",
-            "count": 50  # quantos jogos recentes você quer pegar
         }
 
         response = requests.get(url, params=params)

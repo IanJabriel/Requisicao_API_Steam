@@ -87,7 +87,7 @@ async def get_owned_games():
         raise HTTPException(status_code=500, detail=f"Erro interno: {str(e)}")
 
 @app.get("/games/recent")
-async def get_recent_games(count: int = 50):
+async def get_recent_games():
     try:
         id_steam, key_steam = get_steam_credentials()
         
@@ -96,7 +96,6 @@ async def get_recent_games(count: int = 50):
             "key": key_steam,
             "steamid": id_steam,
             "format": "json",
-            "count": min(count, 100)  # Limita a 100 jogos máximo
         }
 
         response = requests.get(url, params=params)

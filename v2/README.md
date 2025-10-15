@@ -14,11 +14,10 @@ python api.py
 
 ## 🔗 Endpoints disponíveis
 
-- **GET /** - Informações da API
 - **GET /games/owned** - Todos os jogos da biblioteca
-- **GET /games/recent?count=50** - Jogos recentes
+- **GET /games/recent** - Jogos recentes
 - **GET /games/top/{limit}** - Top N jogos mais jogados
-- **GET /games/search/{nome}** - Buscar jogos por nome
+- **GET /games/search/{game_name}** - Buscar jogos por nome
 - **GET /stats** - Estatísticas gerais
 - **GET /docs** - Documentação Swagger
 
