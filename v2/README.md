@@ -1,8 +1,8 @@
-# 🚀 Steam API V2 - API REST
+# Steam API V2 - API REST
 
 Versão evoluída com FastAPI para integração com front-end.
 
-## 🌐 Como executar
+## Como executar
 
 ```bash
 # Navegue para a pasta v2
@@ -12,7 +12,7 @@ cd v2
 python api.py
 ```
 
-## 🔗 Endpoints disponíveis
+## Endpoints disponíveis
 
 - **GET /games/owned** - Todos os jogos da biblioteca
 - **GET /games/recent** - Jogos recentes
@@ -21,12 +21,12 @@ python api.py
 - **GET /stats** - Estatísticas gerais
 - **GET /docs** - Documentação Swagger
 
-## 🌍 Acesso
+## Acesso
 
 - **API:** http://localhost:8000
 - **Documentação:** http://localhost:8000/docs
 
-## ⚙️ Configuração
+## Configuração
 
 Configure as variáveis de ambiente na pasta raiz:
 
@@ -36,9 +36,9 @@ $env:id_steam="SEU_STEAM_ID"
 $env:api_key="SUA_API_KEY_STEAM"
 ```
 
-## 📋 Características
+## Características
 
-- ✅ API REST moderna
-- ✅ Dados em tempo real
-- ✅ CORS habilitado para front-end
-- ✅ Documentação automática
+- API REST moderna
+- Dados em tempo real
+- CORS habilitado para front-end
+- Documentação automática
