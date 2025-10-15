@@ -1,8 +1,8 @@
-# 🎮 Steam API V1 - Versão Piloto
+# Steam API V1 - Versão Piloto
 
 Versão original que salva dados de jogos Steam em arquivos JSON.
 
-## 🚀 Como executar
+## Como executar
 
 ```bash
 # Navegue para a pasta v1
@@ -12,12 +12,12 @@ cd v1
 python steam_api.py
 ```
 
-## 📂 Arquivos gerados
+## Arquivos gerados
 
 - `JsonSteam.json` - Lista completa de jogos ordenados por tempo jogado
 - `JogosRecentes.json` - Jogos jogados recentemente
 
-## ⚙️ Configuração
+## Configuração
 
 Configure as variáveis de ambiente na pasta raiz:
 
@@ -26,8 +26,8 @@ $env:id_steam="SEU_STEAM_ID"
 $env:api_key="SUA_API_KEY_STEAM"
 ```
 
-## 📋 Características
+## Características
 
-- ✅ Script standalone
-- ✅ Salva dados localmente
-- ✅ Versão estável e testada
+- Script standalone
+- Salva dados localmente
+- Versão estável e testada
