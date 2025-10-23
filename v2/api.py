@@ -2,7 +2,6 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import requests
 import os
-import math
 
 app = FastAPI(
     title="Steam Games API V2", 
@@ -21,7 +20,7 @@ app.add_middleware(
 
 def minutos_para_horas(minutos: int) -> int:
     """Converte minutos em horas (arredondado para cima)"""
-    return math.ceil(minutos / 60)
+    return round(minutos / 60, 2)
 
 def get_steam_credentials():
     """Obtém credenciais Steam do ambiente"""
@@ -45,7 +44,8 @@ async def get_owned_games():
         params = {
             "key": key_steam, 
             "steamid": id_steam, 
-            "include_appinfo": 1, 
+            "include_appinfo": 1,
+            "include_played_free_games": 1,
             "format": "json"
         }
 
