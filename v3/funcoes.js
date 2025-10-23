@@ -50,3 +50,21 @@ async function loadRecentGames(){
     }
 }
 document.getElementById('load-recent-games-button').addEventListener('click', loadRecentGames);
+
+async function loadStats() {
+    const data = await fetchAPI('stats');
+    const statsContainer = document.getElementById('stats-container');
+    console.log(data.stats);
+    if (data && data.stats) {
+        statsContainer.innerHTML = `
+            <p><strong>Total de Jogos:</strong> ${data.stats.total_games}</p>
+            <p><strong>Total de Horas Jogadas:</strong> ${data.stats.total_hours_played}h</p>
+            <p><strong>Média de Horas por Jogo:</strong> ${data.stats.average_hours_per_game}h</p>
+            <p><strong>Jogo Mais Jogado:</strong> ${data.stats.most_played_game.name}</p>
+            <img src="${data.stats.most_played_game.img_icon_url}" alt="${data.stats.most_played_game.name}" width="100">
+        `;
+    } else {
+        console.error("Dados de stats não encontrados.");
+    }
+}
+document.getElementById('load-stats-games-button').addEventListener('click', loadStats);
