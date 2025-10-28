@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOC TESTE</title>
+    <title>Steam Games</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -11,22 +12,65 @@
             <h1>Meus jogos Steam</h1>
         </header>
 
+        <section class="search-section">
+            <div class="section-header">
+                <h2>Buscar Jogo</h2>
+                <button class="toggle-button" data-target="search-content">▼</button>
+            </div>
+            <div id="search-content" class="section-content">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Digite o nome do jogo..."
+                >
+                <button id="search-button">Buscar</button>
+                <div id="search-results" class="games-container"></div>
+            </div>
+        </section>
+
+
         <section class="all-games-section">
-            <h2>Todos os jogos</h2>
-            <button id="load-all-games-button">Carregar Jogos</button>
-            <div id="all-games-container" class="games-container"></div>
+            <div class="section-header">
+                <h2>Todos os jogos</h2>
+                <button class="toggle-button" data-target="all-games-content">▼</button>
+            </div>
+            <div id="all-games-content" class="section-content">
+                <button id="load-all-games-button">Carregar Jogos</button>
+                <div id="all-games-container" class="games-container"></div>
+            </div>
         </section>
 
         <section class="recent-games-section">
-            <h2>Jogados Recentemente</h2>
-            <button id="load-recent-games-button">Carregar Jogos</button>
-            <div id="recent-games-container" class="games-container"></div>
+            <div class="section-header">
+                <h2>Jogados Recentemente</h2>
+                <button class="toggle-button" data-target="recent-games-content">▼</button>
+            </div>
+            <div id="recent-games-content" class="section-content">
+                <button id="load-recent-games-button">Carregar Jogos</button>
+                <div id="recent-games-container" class="games-container"></div>
+            </div>
         </section>
     
+        <section class="top-games-section">
+            <div class="section-header">
+                <h2>Top 10 Jogos Mais Jogados</h2>
+                <button class="toggle-button" data-target="top-games-content">▼</button>
+            </div>
+            <div id="top-games-content" class="section-content">
+                <button id="load-top-games-button">Carregar Top 10</button>
+                <div id="top-games" class="games-container"></div>
+            </div>
+        </section>
+        
         <section class="stats-section">
-            <h2>Estatísticas de jogos/horas</h2>
-            <button id="load-stats-games-button">Carregar Jogos</button>
-            <div id="stats-container" class="games-container"></div>
+            <div class="section-header">
+                <h2>Estatísticas de jogos/horas</h2>
+                <button class="toggle-button" data-target="stats-content">▼</button>
+            </div>
+            <div id="stats-content" class="section-content">
+                <button id="load-stats-games-button">Carregar Estatísticas</button>
+                <div id="stats-container" class="games-container"></div>
+            </div>
         </section>  
     
     </div>
